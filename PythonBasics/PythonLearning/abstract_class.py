@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
-class Shape(ABC):
+
+class Shape():
     @abstractmethod
     def get_area(self):
         pass
@@ -17,3 +18,6 @@ class Rectangle(Shape):
 
 rect = Rectangle(2, 5)
 print(rect.get_area())
+
+shape = Shape()
+shape.get_area()
